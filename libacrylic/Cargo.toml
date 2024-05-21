@@ -1,0 +1,16 @@
+[package]
+name = "acrylic"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "acrylic"
+crate-type = ["cdylib"]
+
+[dependencies]
+jni = "0.19"
+libloading = "0.7"
+floem-window-vibrancy = { version = "0.4.3" }
+raw-window-handle = "0.5.2"
+windows = { version = "0.52.0"}
+windows-sys = { version = "^0.52.0", features = ["Win32_Foundation", "Win32_UI_WindowsAndMessaging"] }
